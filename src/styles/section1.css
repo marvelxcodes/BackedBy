@@ -1,0 +1,35 @@
+
+/* General Styling */
+section.s1 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/bg.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.s1 > .card {
+  border: solid 2px var(--accent-color);
+  box-shadow: 0.5rem 0.5rem var(--accent-color);
+  height: 20rem;
+  width: 28rem;
+  max-width: 80vw;
+  background-color: #fff;
+}
+
+/* Small Devices */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Medium Devices */
+@media screen and (min-width: 769px) {
+  
+}
+
+/* Large Devices */
+@media screen and (min-width: 1024px) {
+  
+}
