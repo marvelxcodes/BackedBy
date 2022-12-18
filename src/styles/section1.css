@@ -19,6 +19,14 @@ section.s1 > .card {
   background-color: #fff;
 }
 
+.card > span {
+  font-family: '';
+}
+
+.card > span > h3 {
+  
+}
+
 /* Small Devices */
 @media screen and (max-width: 768px) {
 
