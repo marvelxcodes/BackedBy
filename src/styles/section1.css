@@ -10,26 +10,78 @@ section.s1 {
   justify-content: center;
 }
 
-section.s1 > .card {
+section.s1 .card {
   border: solid 2px var(--accent-color);
   box-shadow: 0.5rem 0.5rem var(--accent-color);
-  height: 20rem;
   width: 28rem;
   max-width: 80vw;
   background-color: #fff;
+  padding: 2rem;
 }
 
-.card > span {
-  font-family: '';
+.card h1 {
+  font-size: 2.8rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  color: var(--accent-color);
 }
 
-.card > span > h3 {
-  
+.card span {
+  display: flex;
+  margin: 0;
+}
+
+.card > h3 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.card > h3 > b {
+  font-weight: 900;
+}
+
+.card .prop-1 {
+  position: relative;
+  top: -12px;
+  font-size: 14px;
+  font-family: 'Inconsolata', monospace;
+  background-color: #F7C947;
+  box-shadow: 4px 4px #F7C947;
+  margin-left: 1rem;
+  transform: rotateZ(-5deg);
+  text-align: center;
+  padding: 4px 0 4px 0;
+  width: 5rem;
+  border: solid 2px var(--accent-color);
+}
+
+.card h3.prop-1 {
+  text-transform: uppercase;
+}
+
+.card .btns {
+  display: flex;
+  margin: 2rem 0 1rem 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.card .btns button {
+  font-family: 'Inconsolata', monospace;
+  text-transform: uppercase;
+  font-weight: 800;
+  width: 200px;
+  margin: 0 1rem 0 1rem;
+  height: 2.8rem;
 }
 
 /* Small Devices */
 @media screen and (max-width: 768px) {
-
+  .btn-secondary {
+    display: none;
+  }
 }
 
 /* Medium Devices */

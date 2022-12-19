@@ -37,7 +37,7 @@ const Header = () => {
         <p>ABOUT US</p>
         <p>BLOG</p>
         <p>APP</p>
-        <span>|</span>
+        <span></span>
         <p>SIGN IN</p>
         <p>SIGN UP</p>
       </nav>

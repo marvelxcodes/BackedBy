@@ -7,21 +7,21 @@
   top: 0;
   left: 0;
   background-color: var(--accent-color);
-  padding: 0 2rem 0 2rem;
+  padding: 0 0rem 0 2rem;
   display: flex;
   align-items: center;
 }
 
-.Header > .Logo {
+.Header .Logo {
   height: 2rem;
 }
 
 /* Small devices */
 @media screen and (max-width: 900px) {
-  .Header > nav {
+  .Header nav {
     position: absolute;
     top: 6rem;
-    right: 6rem;
+    right: 2.6rem;
     flex: 1;
     height: 40vh;
     min-height: 14rem;
@@ -39,7 +39,7 @@
     border-radius: 0.5rem 0 0.5rem 0.5rem;
   }
 
-  .Header > nav::before {
+  .Header nav::before {
     height: 1rem;
     width: 1rem;
     content: "";
@@ -50,13 +50,13 @@
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
   }
 
-  nav > p {
+  nav p {
     margin: 0.5rem 0 0.5rem 0;
     cursor: pointer;
     user-select: none;
   }
 
-  nav > p:hover {
+  nav p:hover {
     opacity: 70%;
     transition: opacity 0.4s;
   }
@@ -65,28 +65,22 @@
     transform: scaleY(0);
   }
 
-  .Header > span {
-    width: 1px;
-    height: 20rem;
-    background-color: #fff;
-  }
-
-  .Header > .toggle {
+  .Header .toggle {
     height: 2rem;
     width: 2rem;
     color: white;
     position: absolute;
-    right: 5rem;
+    right: 2rem;
   }
 
-  nav > span {
+  nav span {
     display: none;
   }
 }
 
 /* Medium Devices & Large Devices */
 @media screen and (min-width: 901px) {
-  .Header > nav {
+  .Header nav {
     flex: 1;
     height: 100%;
     font-family: "Inconsolata", monospace;
@@ -98,23 +92,24 @@
     padding: 0 3rem 0 3rem;
   }
 
-  nav > p {
-    margin: 0 1.5rem 0 1.5rem;
+  nav p {
+    margin: 0 0rem 0 2.5rem;
     cursor: pointer;
   }
 
-  nav > p:hover {
+  nav p:hover {
     opacity: 70%;
     transition: opacity 0.4s;
   }
 
-  .Header > span {
+  .Header span {
     width: 1px;
-    height: 20rem;
+    height: 1.5rem;
     background-color: #fff;
+    margin: 0 0 0 2.5rem;
   }
 
-  .Header > .toggle {
+  .Header .toggle {
     display: none;
   }
 }

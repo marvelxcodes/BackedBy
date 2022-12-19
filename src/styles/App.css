@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Inconsolata:wght@800&display=swap');
 
 :root {
   --accent-color: #382436;
+  --pink-color: #EE2C80;
 }
 
 /* Refactoring */
@@ -12,4 +13,32 @@ html {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
 
+
+/* Components */
+
+.btn-primary {
+  background-color: var(--pink-color);
+  color: #fff;
+  box-shadow: 4px 4px 0 var(--accent-color);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  box-shadow: 6px 6px var(--accent-color);
+  opacity: 0.80;
+}
+
+.btn-secondary {
+  box-shadow: 4px 4px 0 var(--accent-color);
+  background-color: #fff;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  box-shadow: 6px 6px var(--accent-color);
+  opacity: 0.80;
+}
