@@ -2,4 +2,66 @@ footer {
     width: 100%;
     display: flex;
     background-color: var(--color-accent);
+    color: white;
+    padding: 5rem;
+}
+
+footer .about {
+    width: 56%;
+}
+
+footer .about p {
+    letter-spacing: 1px;
+    max-width: 70%;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+footer .others {
+    width: 44%;
+    display: flex;
+}
+
+footer .others .resources {
+    width: 50%;
+    margin: 1rem;
+}
+
+footer .others .mainmenu {
+    width: 50%;
+    margin: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0.5rem 0;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 3rem;
+        flex-direction: column;
+    }
+    footer .about {
+        width: 100%;
+    }
+    footer .about p {
+        max-width: 100%;
+    }
+    footer .resources {
+        width: 100%;
+    }
+    
+    footer .mainmenu {
+        width: 100%;
+    }
+    footer .others {
+        width: 100%;
 }

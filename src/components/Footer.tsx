@@ -32,10 +32,30 @@ const Footer = () => {
             fill="white"
           />
         </svg>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro aliquid, accusantium aperiam ipsum maxime quas mollitia quibusdam ullam perspiciatis, praesentium nemo ea consequatur, alias tenetur voluptatum</p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
+          aliquid, accusantium aperiam ipsum maxime quas mollitia
+        </p>
       </div>
-      <div className="mainmenu"></div>
-      <div className="resources"></div>
+      <div className="others">
+        <div className="mainmenu">
+          <p>Main Menu</p>
+          <ul>
+            <li>Get Test Tokens</li>
+            <li>Buy Tokens</li>
+            <li>Upload Art</li>
+            <li>Sign Up</li>
+          </ul>
+        </div>
+        <div className="resources">
+          <p>Resources</p>
+          <ul>
+            <li>About Us</li>
+            <li>FAQs</li>
+            <li>Tutorials</li>
+          </ul>
+        </div>
+      </div>
     </footer>
   );
 };
