@@ -38,13 +38,14 @@
 }
 
 .accordion .ans-container {
-    transition: transform -0.4s;
-  transform: scaleY(100%);
+  transform: scaleY(1);
   padding: 0.2rem 0.8rem 0.2rem 0.8rem;
 }
 .acc-closed .ans-container {
     transform: scaleY(0);
-    height: 0;
+}
+.acc-closed .ans-container .answer {
+  display: none;
 }
 
 .s3 .text-sec .btn-sec button {

@@ -14,6 +14,16 @@ const Section3 = () => {
       answer:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum corporis vero laudantium exercitationem ratione dolores aut illo nesciunt recusandae accusamus vel adipisci obcaecati quam repudiandae, dolore doloribus, iste velit.",
     },
+    {
+      question: "How can I list my tokens for sale?",
+      answer:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum corporis vero laudantium exercitationem ratione dolores aut illo nesciunt recusandae accusamus vel adipisci obcaecati quam repudiandae, dolore doloribus, iste velit.",
+    },
+    {
+      question: "Is there an app for this?",
+      answer:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit illum corporis vero laudantium exercitationem ratione dolores aut illo nesciunt recusandae accusamus vel adipisci obcaecati quam repudiandae, dolore doloribus, iste velit.",
+    },
   ];
   return (
     <div className="s3">
@@ -81,7 +91,7 @@ export const Accordion = ({
         </svg>
       </div>
       <div className={`ans-container ${selection == question && "ans-open"}`}>
-        <p>{answer}</p>
+        <p className="answer">{answer}</p>
       </div>
     </div>
   );

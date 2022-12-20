@@ -12,22 +12,32 @@ const Section4 = () => {
         All revenue from membership purchases are distributed to $PROJECT token holders. All transactions are performed using the chain native token. `,
     },
     {
-      quarter: 2,
+      quarter: 4,
+      year: 2022,
+      status: "scheduled",
+      title: "Monitised Messaging",
+      description: `Creators can choose to accept and monetize direct messages from fans`,
+    },
+    {
+      quarter: 4,
+      year: 2022,
+      status: "scheduled",
+      title: "Distributed File Storage",
+      description: `All creator content encrypted and hosted on a distributed file storage service. Decentralized access control to content for membership NFT holders.`,
+    },
+    {
+      quarter: 1,
       year: 2023,
       status: "scheduled",
-      title: "MVP Launched on Testnet",
-      description: `A functional version of BackedBy that allows creators to make profiles, mint $PROJECT tokens, setup tiers for membership access, and post content. Creators can also choose to list their $PROJECT tokens for sale. 
-          Individuals interested in directly investing in creators can become Backers by buying $PROJECT tokens. Subscribers can then choose a membership tier for purchase to access content. 
-          All revenue from membership purchases are distributed to $PROJECT token holders. All transactions are performed using the chain native token. `,
+      title: "Launch of version 1 on Mainnet",
+      description: `All creator content encrypted and hosted on a distributed file storage service. Decentralized access control to content for membership NFT holders.`,
     },
     {
       quarter: 2,
-      year: 2022,
+      year: 2023,
       status: "scheduled",
-      title: "MVP Launched on Testnet",
-      description: `A functional version of BackedBy that allows creators to make profiles, mint $PROJECT tokens, setup tiers for membership access, and post content. Creators can also choose to list their $PROJECT tokens for sale. 
-          Individuals interested in directly investing in creators can become Backers by buying $PROJECT tokens. Subscribers can then choose a membership tier for purchase to access content. 
-          All revenue from membership purchases are distributed to $PROJECT token holders. All transactions are performed using the chain native token. `,
+      title: "Founding Creators Onboarded",
+      description: `Outreact efforts focused on onboarding a diverse set of founding creators, representing the core of the BackedBy platform.`,
     },
   ];
   return (
