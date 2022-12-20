@@ -1,0 +1,82 @@
+.s5 {
+  width: 100%;
+  padding: 5rem 1rem 5rem 1rem;
+}
+.s5 .blogs-container {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.s5 .text-container {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.s5 .blogs-container .blog {
+  height: 16rem;
+  width: 15rem;
+  border: 2px solid var(--color-accent);
+  box-shadow: 6px 6px var(--color-accent);
+  margin: 0 1rem 1rem 1rem;
+}
+
+.s5 .text-container h3 , .s5 .text-container h1 {
+    text-align: center;
+}
+
+.s5 .text-container h3 {
+    font-family: var(--font-monospace);
+    font-weight: 400;
+}
+
+.s5 .blogs-container .blog .thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.s5 .blogs-container .blog .about {
+  padding: 0.6rem;
+}
+
+.s5 .blogs-container .blog .about .timestamp {
+  font-size: 0.9rem;
+  font-family: monospace;
+  font-weight: 400;
+  color: #f48285;
+}
+
+.s5 .blogs-container .blog .about .title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--color-accent);
+}
+
+.s5 .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s5 .btn-container .btn-primary, .s5 .btn-container .btn-secondary {
+    height: 2.8rem;
+    width: 200px;
+    margin: 1rem 1rem 0 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .s5 .blogs-container {
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+    }
+    .s5 .btn-container {
+        flex-direction: column;
+    }
+    .s5 .btn-container .btn-primary, .s5 .btn-container .btn-secondary {
+        width: 280px;
+        margin: 1rem 0 0 0;
+    }
+}

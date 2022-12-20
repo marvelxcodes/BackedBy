@@ -1,0 +1,25 @@
+.s6 {
+  height: calc(100vh - 80px);
+  width: 100%;
+  background-image: url("/bg.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s6 .card {
+  border: solid 2px var(--accent-color);
+  box-shadow: 0.5rem 0.5rem var(--accent-color);
+  width: 28rem;
+  max-width: 80vw;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.s6 .card h1 {
+  font-size: 2.8rem;
+  font-family: var(--font-primary);
+  margin: 0;
+  color: var(--accent-color);
+}
