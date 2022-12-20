@@ -6,24 +6,25 @@ const Section7 = () => {
       <div className="disc">
         <h3>Ask us almost anything</h3>
         <h1>Drop us a line</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta obcaecati repellendus sequi quos velit quisquam labore neque eaque omnis voluptates voluptate, voluptatem facilis libero illo? Itaque iure consequatur quod repudiandae.</p>
       </div>
       <div className="form">
         <div className="card">
           <div className="head">
             <h3>FILL IN THE FORM BELOW</h3>
           </div>
-          <div>
-            <div>
-                <input type="text" placeholder="Name" tabIndex={1} />
-                <input type="email" placeholder="Email" tabIndex={2} />
+          <div className="body">
+            <div className="inputs">
+              <input className="name input" type="text" placeholder="Name" tabIndex={1} />
+              <input className="email input" type="email" placeholder="Email" tabIndex={2} />
             </div>
-            <textarea placeholder="Message"></textarea>
-            <button className="btn-pimary">SEND MESSAGE</button>
+            <textarea className="message input" placeholder="Message"></textarea>
+            <button className="btn-primary">SEND MESSAGE</button>
           </div>
           <div className="foot">
             <p>
               *Your personal information will not be shared, and your inbox will
-              not be spammed
+              not be spammed.
             </p>
           </div>
         </div>

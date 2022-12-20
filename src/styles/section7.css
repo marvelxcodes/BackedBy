@@ -1,18 +1,146 @@
 .s7 {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
+  background-color: #f7c947;
 }
 
+.s7 .form .card {
+  border: solid 2px var(--color-accent);
+  box-shadow: 6px 6px var(--color-accent);
+  background-color: #fff;
+  height: min-content;
+}
 
+.s7 .disc {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-accent);
+}
+.s7 .disc p {
+  line-height: 1.3rem;
+  font-weight: 600;
+}
 
-@media screen and (max-width: 768px) {
-    .s7 {
-        flex-direction: column;
-    }
+.s7 .form {
+  padding: 3rem;
+}
+
+.s7 .form .card .head h3 {
+  font-size: 1rem;
+  padding: 1rem;
+  letter-spacing: 1px;
+  border-bottom: solid 2px;
+}
+.s7 .form .card .body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.s7 .form .card .body .inputs {
+  width: 100%;
+  display: flex;
+}
+.s7 .form .card .body .btn-primary {
+  width: 220px;
+  height: 2.8rem;
+}
+
+.s7 .form .card .body .input {
+  outline: none;
+  border: 1px solid var(--color-accent);
+}
+.s7 .form .card .body .input:focus {
+  box-shadow: 5px 5px var(--color-accent);
+}
+
+.s7 .form .card .body .message {
+  width: 100%;
+  margin: 1rem 0;
+  resize: none;
+  height: 6rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: var(--font-monospace);
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.s7 .form .card .body .inputs .name {
+  height: 2.8rem;
+  padding: 1rem;
+  margin-right: 0.5rem;
+  width: 50%;
+  font-family: var(--font-monospace);
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.s7 .form .card .body .inputs .email {
+  height: 2.8rem;
+  padding: 1rem;
+  margin-left: 0.5rem;
+  width: 50%;
+  font-family: var(--font-monospace);
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.s7 .form .card .foot {
+  border-top: solid 2px var(--color-accent);
+  padding: 0 1rem;
+}
+.s7 .form .card .foot p {
+  font-size: 0.7rem;
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem 0;
 }
 
 @media screen and (min-width: 768px) {
-    .s7 {
-        flex-direction: row;
-    }
+  .s7 {
+    flex-direction: row;
+  }
+
+  .s7 .disc {
+    width: 50%;
+    padding: 3rem;
+  }
+  .s7 .form .card {
+    margin: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .s7 {
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .s7 .form {
+    display: flex;
+    justify-content: center;
+  }
+  .s7 .disc {
+    width: 100%;
+  }
+  .s7 .form .card {
+    max-width: 25rem;
+  }
+
+  .s7 .form {
+    width: 100%;
+  }
+  .s7 .form {
+    padding: 1rem;
+  }
+  .s7 .form .card .body .inputs {
+    flex-direction: column;
+  }
+  .s7 .form .card .body .inputs .name {
+    width: 100%;
+  }
+  .s7 .form .card .body .inputs .email {
+    width: 100%;
+    margin: 1rem 0 0 0;
+  }
 }

@@ -32,4 +32,5 @@
 .s6 .card .btn-primary {
   height: 2.8rem;
   width: 200px;
+  text-transform: uppercase;
 }
