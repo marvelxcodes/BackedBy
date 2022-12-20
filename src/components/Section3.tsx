@@ -2,7 +2,7 @@ import { Dispatch, SetStateAction, useState } from "react";
 import "../styles/section3.css";
 
 const Section3 = () => {
-  const [selection, setSelection] = useState("");
+  const [selection, setSelection] = useState("How much money can I earn?");
   const FAQs = [
     {
       question: "How much money can I earn?",
@@ -23,8 +23,7 @@ const Section3 = () => {
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
           optio repudiandae iusto, excepturi nulla reprehenderit voluptas
-          officiis illo reiciendis, qui numquam dolore fuga nam sint magni,
-          voluptatibus mollitia? Ea, ipsum.
+          officiis illo reiciendis.
         </p>
         <div className="btn-sec">
           <button className="btn-primary">SIGN UP</button>
@@ -33,7 +32,11 @@ const Section3 = () => {
       </div>
       <div className="accordion-container">
         {FAQs.map((faq) => (
-          <Accordion {...faq} selection={selection} setSelection={setSelection} />
+          <Accordion
+            {...faq}
+            selection={selection}
+            setSelection={setSelection}
+          />
         ))}
       </div>
     </div>
@@ -46,13 +49,23 @@ type AccordionType = {
   question: string;
   answer: string;
   selection: string;
-  setSelection: Dispatch<SetStateAction<string>>
+  setSelection: Dispatch<SetStateAction<string>>;
 };
 
-export const Accordion = ({ question, answer, selection, setSelection }: AccordionType) => {
+export const Accordion = ({
+  question,
+  answer,
+  selection,
+  setSelection,
+}: AccordionType) => {
   return (
-    <div className={`accordion ${selection != question&&"acc-closed"}`}>
-      <div onClick={() => {setSelection(question!=selection?question:"")}} className="ques-container">
+    <div className={`accordion ${selection != question && "acc-closed"}`}>
+      <div
+        onClick={() => {
+          setSelection(question != selection ? question : "");
+        }}
+        className="ques-container"
+      >
         <h3>{question}</h3>
         <svg
           xmlns="http://www.w3.org/2000/svg"

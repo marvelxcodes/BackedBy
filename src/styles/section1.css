@@ -1,7 +1,7 @@
 
 /* General Styling */
 section.s1 {
-  height: 100vh;
+  height: calc(100vh - 80px);
   width: 100%;
   background-image: url("/bg.png");
   background-size: cover;
