@@ -4,9 +4,10 @@
   height: 80px;
   width: 100vw;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
-  background-color: var(--accent-color);
+  background-color: var(--color-accent);
   padding: 0 0rem 0 2rem;
   display: flex;
   align-items: center;
@@ -27,8 +28,8 @@
     min-height: 14rem;
     width: 70vw;
     max-width: 15rem;
-    background: #382436a0;
-    font-family: "Inconsolata", monospace;
+    background: var(--color-accent);
+    font-family: var(--font-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +44,7 @@
     height: 1rem;
     width: 1rem;
     content: "";
-    background-color: #382436a0;
+    background-color: var(--color-accent);
     position: absolute;
     top: -1rem;
     right: 0;
@@ -83,7 +84,7 @@
   .Header nav {
     flex: 1;
     height: 100%;
-    font-family: "Inconsolata", monospace;
+    font-family: var(--font-primary);
     display: flex;
     align-items: center;
     color: white;

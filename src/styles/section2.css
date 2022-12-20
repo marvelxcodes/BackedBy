@@ -1,4 +1,144 @@
 .s2 {
-    width: 100%;
+  width: 100%;
+  background-color: rgb(233, 233, 233);
+}
 
+* {
+  color: var(--color-primary);
+}
+
+p {
+  font-family: var(--font-monospace);
+}
+
+h1,
+h3 {
+  font-family: var(--font-primary);
+  margin: 0;
+}
+h2 {
+  font-family: var(--font-monospace);
+  font-weight: 300;
+}
+
+.s2 .div-1 {
+  display: flex;
+  padding: 5rem 5rem 2rem 5rem;
+}
+
+.s2 .div-1 .vid-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s2 .div-1 .vid-container {
+  width: min-content;
+  border: solid 1.5px var(--color-accent);
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 6px 6px var(--color-accent);
+}
+.s2 .div-1 h4 {
+  border-bottom: solid 1.5px var(--color-accent);
+  font-family: var(--font-monospace);
+  margin: 0;
+  padding: 1rem;
+}
+
+.s2 .div-1 .vid-container .vid-prop {
+  padding: 1rem 2.5rem 2.5rem 2.5rem;
+}
+
+.s2 .div-2 {
+  width: 100%;
+  display: flex;
+  padding: 2rem 0 2rem 0;
+  align-items: center;
+  justify-content: center;
+}
+.feature {
+  padding: 1.5rem 2rem 1rem 2rem;
+  width: 80%;
+  max-width: 20rem;
+  height: 8rem;
+  background-color: #fff;
+  box-shadow: 6px 6px #f48285;
+  border: solid 1.5px var(--color-accent);
+  cursor: grab;
+}
+
+.div-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+.s2 .div-3 button {
+  width: 260px;
+  height: 2.8rem;
+}
+
+@media screen and (max-width: 880px) {
+  .div-2 {
+    flex-direction: column;
+  }
+
+  .feature {
+    margin: 1rem 0 1rem 0;
+  }
+  .div-2 {
+    align-items: center;
+  }
+  .div-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s2 .div-3 button {
+    margin-top: 1rem;
+  }
+
+  .s2 .div-1 {
+    flex-direction: column;
+  }
+  .s2 .div-1 .vid-sec {
+    width: 100%;
+  }
+  .s2 .div-1 .vid-sec {
+    padding-top: 3rem;
+  }
+}
+@media screen and (min-width: 880px) {
+  .s2 {
+    padding: 7rem 3rem 3rem 3rem;
+  }
+  .s2 .div-3 button {
+    height: 2.8rem;
+    width: 200px;
+  }
+  .div-2 {
+    flex-direction: row;
+  }
+
+  .feature {
+    margin: 0 2rem 0 2rem;
+  }
+  .div-2 {
+    justify-content: center;
+  }
+  .div-3 {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .s2 .div-3 button {
+    margin: 1rem 1rem 0 1rem;
+  }
+  .s2 .div-1 .text-sec {
+    width: 50%;
+  }
+  .s2 .div-1 .vid-sec {
+    width: 50%;
+  }
 }

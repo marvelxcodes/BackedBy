@@ -1,0 +1,60 @@
+.s3 {
+  background-color: #00945c;
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+}
+.accordion {
+  background: #fff;
+  margin: 1.5rem 0 1.5rem 0;
+  border: solid 2px var(--color-accent);
+  box-shadow: 6px 6px var(--color-accent);
+}
+
+.accordion .ques-container {
+  display: flex;
+  padding: 1rem;
+  border-bottom: solid 2px var(--color-accent);
+}
+.accordion .ques-container h3 {
+  flex: 1;
+}
+.accordion .ques-container .icon {
+  aspect-ratio: 1 / 1;
+  height: 1.2rem;
+  display: flex;
+  transform: rotateZ(-30deg);
+  transition: transform 0.3s;
+}
+
+.accordion .ques-container .icon-open {
+  transform: rotateZ(-210deg);
+}
+
+.accordion .ans-container {
+    transition: transform -0.4s;
+  transform: scaleY(100%);
+  padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+}
+.acc-closed .ans-container {
+    transform: scaleY(0);
+    height: 0;
+}
+
+.s3 .text-sec .btn-sec button {
+    width: 200px;
+    height: 2.8rem;
+    margin: 0 1rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .s3 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .s3 {
+    flex-direction: row;
+  }
+}

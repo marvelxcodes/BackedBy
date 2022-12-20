@@ -2,7 +2,7 @@
 /* General Styling */
 section.s1 {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-image: url("/bg.png");
   background-size: cover;
   display: flex;
@@ -21,7 +21,7 @@ section.s1 .card {
 
 .card h1 {
   font-size: 2.8rem;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: var(--font-primary);
   margin: 0;
   color: var(--accent-color);
 }
@@ -32,10 +32,11 @@ section.s1 .card {
 }
 
 .card > h3 {
-  font-family: 'Inconsolata', monospace;
+  font-family: var(--font-monospace);
   font-size: 1rem;
   text-align: center;
   font-weight: 500;
+  padding-top: 1rem;
 }
 
 .card > h3 > b {
@@ -44,20 +45,17 @@ section.s1 .card {
 
 .card .prop-1 {
   position: relative;
-  top: -12px;
+  top: -5px;
   font-size: 14px;
-  font-family: 'Inconsolata', monospace;
+  font-family: var(--font-monospace);
   background-color: #F7C947;
   box-shadow: 4px 4px #F7C947;
   margin-left: 1rem;
   transform: rotateZ(-5deg);
   text-align: center;
-  padding: 4px 0 4px 0;
+  padding: .6rem 0 .5rem 0;
   width: 5rem;
-  border: solid 2px var(--accent-color);
-}
-
-.card h3.prop-1 {
+  border: solid 2px var(--color-accent);
   text-transform: uppercase;
 }
 
@@ -69,7 +67,7 @@ section.s1 .card {
 }
 
 .card .btns button {
-  font-family: 'Inconsolata', monospace;
+  font-family: var(--font-monospace);
   text-transform: uppercase;
   font-weight: 800;
   width: 200px;
@@ -78,18 +76,8 @@ section.s1 .card {
 }
 
 /* Small Devices */
-@media screen and (max-width: 768px) {
-  .btn-secondary {
+@media screen and (max-width: 768px) { 
+  .s1 .btn-secondary {
     display: none;
   }
-}
-
-/* Medium Devices */
-@media screen and (min-width: 769px) {
-  
-}
-
-/* Large Devices */
-@media screen and (min-width: 1024px) {
-  
 }

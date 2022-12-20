@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Inconsolata:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Inconsolata:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  --accent-color: #382436;
-  --pink-color: #EE2C80;
+  --color-accent: #382436;
+  --color-pink: #EE2C80;
+  --font-primary: 'IBM Plex Sans', sans-serif;
+  --font-monospace: 'Inconsolata', monospace;
 }
 
 /* Refactoring */
@@ -17,28 +19,32 @@ html {
   box-sizing: border-box;
 }
 
+.App {
+  width: 100%;
+}
+
 
 /* Components */
 
 .btn-primary {
-  background-color: var(--pink-color);
+  background-color: var(--color-pink);
   color: #fff;
-  box-shadow: 4px 4px 0 var(--accent-color);
+  box-shadow: 4px 4px 0 var(--color-accent);
   transition: all 0.2s;
   cursor: pointer;
 }
 .btn-primary:hover {
-  box-shadow: 6px 6px var(--accent-color);
+  box-shadow: 6px 6px var(--color-accent);
   opacity: 0.80;
 }
 
 .btn-secondary {
-  box-shadow: 4px 4px 0 var(--accent-color);
+  box-shadow: 4px 4px 0 var(--color-accent);
   background-color: #fff;
   transition: all 0.2s;
   cursor: pointer;
 }
 .btn-secondary:hover {
-  box-shadow: 6px 6px var(--accent-color);
+  box-shadow: 6px 6px var(--color-accent);
   opacity: 0.80;
 }
