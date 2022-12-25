@@ -18,7 +18,7 @@ const Section7 = () => {
               <input className="name input" type="text" placeholder="Name" tabIndex={1} />
               <input className="email input" type="email" placeholder="Email" tabIndex={2} />
             </div>
-            <textarea className="message input" placeholder="Message"></textarea>
+            <textarea className="message input" placeholder="Message" tabIndex={3}></textarea>
             <button className="btn-primary">SEND MESSAGE</button>
           </div>
           <div className="foot">

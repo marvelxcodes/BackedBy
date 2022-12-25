@@ -19,8 +19,24 @@
   color: var(--color-accent);
 }
 .s7 .disc p {
-  line-height: 1.3rem;
   font-weight: 600;
+  font-family: var(--font-monospace);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+.s7 .disc h3 {
+  font-family: var(--font-monospace);
+  font-size: 1.8rem;
+  font-weight: 500;
+
+}
+
+.s7 .disc h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  font-family: var(--font-primary);
 }
 
 .s7 .form {
@@ -50,10 +66,16 @@
 
 .s7 .form .card .body .input {
   outline: none;
-  border: 1px solid var(--color-accent);
+  border: 2px solid var(--color-accent);
+  font-weight: 700;
+  color: var(--color-accent);
+}
+.s7 .form .card .body .input::placeholder {
+  color: var(--color-accent);
 }
 .s7 .form .card .body .input:focus {
-  box-shadow: 5px 5px var(--color-accent);
+  box-shadow: 4px 4px var(--color-accent);
+  font-weight: 800;
 }
 
 .s7 .form .card .body .message {
@@ -95,6 +117,8 @@
   text-align: center;
   margin: 0;
   padding: 0.5rem 0;
+  font-family: var(--font-monospace);
+  font-weight: 800;
 }
 
 @media screen and (min-width: 768px) {
@@ -104,7 +128,7 @@
 
   .s7 .disc {
     width: 50%;
-    padding: 3rem;
+    padding-left: 5%;
   }
   .s7 .form .card {
     margin: 5rem 0;

@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
       <div className="others">
         <div className="mainmenu">
-          <p>Main Menu</p>
+          <h6>Main Menu</h6>
           <ul>
             <li>Get Test Tokens</li>
             <li>Buy Tokens</li>
@@ -48,7 +48,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="resources">
-          <p>Resources</p>
+          <h6>Resources</h6>
           <ul>
             <li>About Us</li>
             <li>FAQs</li>
