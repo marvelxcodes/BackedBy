@@ -43,7 +43,7 @@ const Section4 = () => {
   return (
     <div className="s4">
       <div className="header">
-        <h4>Where are we going with this?</h4>
+        <h3>Where are we going with this?</h3>
         <h1>The BackedBy Roadmap</h1>
       </div>
       <div className="items-container">

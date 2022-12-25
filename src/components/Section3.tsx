@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useId, useState } from "react";
 import "../styles/section3.css";
 
 const Section3 = () => {
@@ -29,7 +29,7 @@ const Section3 = () => {
     <div className="s3">
       <div className="text-sec">
         <h3>Learn more</h3>
-        <h1>Frequently Asked Questions</h1>
+        <h1>Frequently Asked<br /> Questions</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
           optio repudiandae iusto, excepturi nulla reprehenderit voluptas
@@ -68,8 +68,9 @@ export const Accordion = ({
   selection,
   setSelection,
 }: AccordionType) => {
+  const id = useId()
   return (
-    <div className={`accordion ${selection != question && "acc-closed"}`}>
+    <div key={id} className={`accordion ${selection != question && "acc-closed"}`}>
       <div
         onClick={() => {
           setSelection(question != selection ? question : "");

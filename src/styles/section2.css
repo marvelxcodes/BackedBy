@@ -3,27 +3,35 @@
   background-color: rgb(233, 233, 233);
 }
 
-* {
-  color: var(--color-primary);
-}
-
-p {
+.s2 p {
   font-family: var(--font-monospace);
+  color: var(--color-accent);
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.5rem;
 }
 
-h1,
+.s2 h1,
 h3 {
   font-family: var(--font-primary);
   margin: 0;
+  color: var(--color-accent);
 }
-h2 {
+
+.s2 h1 {
+  font-size: 2.5rem;
+}
+.s2 h2 {
+  color: var(--color-accent);
   font-family: var(--font-monospace);
   font-weight: 300;
+  font-size: 1.8rem;
+  margin: 0;
 }
 
 .s2 .div-1 {
   display: flex;
-  padding: 5rem 5rem 2rem 5rem;
+  padding: 2rem 4rem 2rem 4rem;
 }
 
 .s2 .div-1 .vid-sec {
@@ -32,23 +40,29 @@ h2 {
   align-items: center;
 }
 
-.s2 .div-1 .vid-container {
+.s2 .div-1 .vid-sec .vid-container {
   width: min-content;
-  border: solid 1.5px var(--color-accent);
+  border: solid 2px var(--color-accent);
   display: flex;
   flex-direction: column;
   background-color: #fff;
   box-shadow: 6px 6px var(--color-accent);
 }
-.s2 .div-1 h4 {
+
+.s2 .div-1 .vid-sec .vid-container h4 {
   border-bottom: solid 1.5px var(--color-accent);
   font-family: var(--font-monospace);
   margin: 0;
   padding: 1rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: var(--color-accent);
 }
 
 .s2 .div-1 .vid-container .vid-prop {
-  padding: 1rem 2.5rem 2.5rem 2.5rem;
+  padding: 3rem 4rem 3rem 4rem;
+  height: 16rem;
+  width: 28rem;
 }
 
 .s2 .div-2 {
@@ -58,18 +72,31 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-.feature {
+
+.s2 .feature {
   padding: 1.5rem 2rem 1rem 2rem;
   width: 80%;
   max-width: 20rem;
   height: 8rem;
   background-color: #fff;
   box-shadow: 6px 6px #f48285;
-  border: solid 1.5px var(--color-accent);
+  border: solid 2px var(--color-accent);
   cursor: grab;
 }
 
-.div-3 {
+.s2 .feature h3 {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.s2 .feature p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+.s2 .div-3 {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -86,13 +113,13 @@ h2 {
     flex-direction: column;
   }
 
-  .feature {
+  .s2 .feature {
     margin: 1rem 0 1rem 0;
   }
-  .div-2 {
+  .s2 .div-2 {
     align-items: center;
   }
-  .div-3 {
+  .s2 .div-3 {
     flex-direction: column;
     align-items: center;
   }
@@ -112,23 +139,23 @@ h2 {
 }
 @media screen and (min-width: 880px) {
   .s2 {
-    padding: 7rem 3rem 3rem 3rem;
+    padding: 3rem 1rem;
   }
   .s2 .div-3 button {
     height: 2.8rem;
     width: 200px;
   }
-  .div-2 {
+  .s2 .div-2 {
     flex-direction: row;
   }
 
-  .feature {
+  .s2 .feature {
     margin: 0 2rem 0 2rem;
   }
-  .div-2 {
+  .s2 .div-2 {
     justify-content: center;
   }
-  .div-3 {
+  .s2 .div-3 {
     flex-direction: row;
     justify-content: center;
   }
