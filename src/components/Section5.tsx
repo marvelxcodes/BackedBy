@@ -1,3 +1,4 @@
+import { useId } from "react";
 import "../styles/section5.css";
 
 const Section5 = () => {
@@ -44,8 +45,9 @@ type BlogType = {
 };
 
 export const Blog = ({ title, timestamp, thumbnail }: BlogType) => {
+  const id = useId()
   return (
-    <div className="blog">
+    <div key={id} className="blog">
       <img className="thumbnail" src={thumbnail} alt={thumbnail} />
       <div className="about">
         <h3 className="timestamp">{timestamp}</h3>

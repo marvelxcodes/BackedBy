@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   flex: 1;
+  overflow-x: scroll;
 }
 .s5 .text-container {
     height: 10rem;
@@ -15,21 +16,30 @@
     align-items: center;
     
 }
-.s5 .blogs-container .blog {
-  height: 16rem;
-  width: 15rem;
-  border: 2px solid var(--color-accent);
-  box-shadow: 6px 6px var(--color-accent);
-  margin: 0 1rem 1rem 1rem;
-}
 
 .s5 .text-container h3 , .s5 .text-container h1 {
-    text-align: center;
+  text-align: center;
+    margin: 0;
+    color: var(--color-accent);
+}
+
+.s5 .text-container h1 {
+  font-size: 2.5rem;
+  font-family: var(--font-primary);
 }
 
 .s5 .text-container h3 {
-    font-family: var(--font-monospace);
-    font-weight: 400;
+  font-family: var(--font-monospace);
+  font-weight: 600;
+  font-size: 1.5rem;
+  
+}
+
+.s5 .blogs-container .blog {
+  width: 20rem;
+  border: 2px solid var(--color-accent);
+  box-shadow: 6px 6px var(--color-accent);
+  margin: 0 1rem 1rem 1rem;
 }
 
 .s5 .blogs-container .blog .thumbnail {
@@ -38,20 +48,22 @@
 }
 
 .s5 .blogs-container .blog .about {
-  padding: 0.6rem;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
 }
 
 .s5 .blogs-container .blog .about .timestamp {
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   font-family: monospace;
   font-weight: 400;
   color: #f48285;
 }
 
 .s5 .blogs-container .blog .about .title {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 900;
   color: var(--color-accent);
+  font-family: var(--font-primary);
+  margin: 0;
 }
 
 .s5 .btn-container {
@@ -68,7 +80,6 @@
 
 @media screen and (max-width: 768px) {
     .s5 .blogs-container {
-        flex-direction: column;
         flex: 1;
         align-items: center;
     }

@@ -61,8 +61,6 @@ h3 {
 
 .s2 .div-1 .vid-container .vid-prop {
   padding: 3rem 4rem 3rem 4rem;
-  height: 16rem;
-  width: 28rem;
 }
 
 .s2 .div-2 {
@@ -136,6 +134,10 @@ h3 {
   .s2 .div-1 .vid-sec {
     padding-top: 3rem;
   }
+  .s2 .div-1 .vid-container .vid-prop {
+    height: 40vw;
+    width: 60vw;
+  }
 }
 @media screen and (min-width: 880px) {
   .s2 {
@@ -167,5 +169,9 @@ h3 {
   }
   .s2 .div-1 .vid-sec {
     width: 50%;
+  }
+  .s2 .div-1 .vid-container .vid-prop {
+    height: 20vw;
+    width: 30vw;
   }
 }

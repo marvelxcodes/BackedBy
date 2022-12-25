@@ -57,6 +57,8 @@ section.s1 .card .prop-1 {
   width: 5rem; 
   border: solid 2px var(--color-accent);
   text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 900;
 }
 
 section.s1 .card .btns {
